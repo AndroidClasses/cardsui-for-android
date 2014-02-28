@@ -121,6 +121,7 @@ public class CardStack extends AbstractCard {
             // handle the listener
             if (i == lastCardPosition) {
                 cardView.setOnClickListener(card.getClickListener());
+                cardView.setOnLongClickListener(card.getOnLongClickListener());
             }
             else {
                 cardView.setOnClickListener(getClickListener(this, container, i));

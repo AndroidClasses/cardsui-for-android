@@ -1,24 +1,25 @@
-.settings
-eclipsebin
+# http://www.kernel.org/pub/software/scm/git/docs/gitignore.html
+# ignore this file
+.gitignore
+# ignore all .svn folder.
+.svn/
 
-bin
-gen
-build
-out
-lib
-local.properties
+# ignore eclipse project file
+.classpath
+.project
+project.properties
+bin/
 
-*/.gradle
-CardsUILib/.gradle
+# ignore idea project folder
+.idea/
 
-target
-pom.xml.*
-release.properties
+# ignore temp output folder
+gen/
+out/
 
-.idea
 *.iml
-classes
 
-obj
+.gradle
+build/
 
-.DS_Store
+obj/

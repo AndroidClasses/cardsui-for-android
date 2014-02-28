@@ -16,7 +16,6 @@
 	<string name="card_desc">Card Description</string>
 	<string name="title_color">Title Color</string>
 	<string name="stripe_color">Stripe Color</string>
-	<string name="overflow">Menu Overflow</string>
 	<string name="clickable">Clickable</string>
 	<string name="create_card">Create Card</string>
 	<string name="to_last_stack">Add to last stack</string>
