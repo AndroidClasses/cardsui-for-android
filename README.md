@@ -2,6 +2,11 @@ CardsUI
 ===================
 An open source library offering the popular Google Now & Google Play cards views, additionnal features, view recycling and an optional Model-View-Controller structure.
 
+## Some extenstion or similar CardList
+* [simone201](https://github.com/simone201/CardsUILib) Android Java Library to manage a CardsUI, like GNow or G+ apps. Features PullToRefresh list, long click events and much more!
+* [kshark27](https://github.com/kshark27/PlayCardGrid) Google Play Market Layout implemented using BucketListAdapter
+* [mauriciojovel](https://github.com/mauriciojovel/card-list) 
+
 ## Google Play Cards
 This new type of card based on the new Google play design are highly customizable.
 
