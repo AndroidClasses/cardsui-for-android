@@ -5,6 +5,7 @@ import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -65,16 +66,43 @@ public class CardSampleFragment extends Fragment {
         }
     }
 
-    private static final String PATTERN_TITLE_PREFIX = "title_part_";
+    private static final String PART_TITLE_PREFIX = "title_part_";
+    private static final String PART_DESC_PREFIX = "description_part_";
     private void initStackAndAppendCards(String title, int index) {
         mCardView.addStack(CardUtils.get().getCardStack(title));
 
-        String[] captions = getStringArray(PATTERN_TITLE_PREFIX + index);
+        String[] captions = getStringArray(PART_TITLE_PREFIX + index);
+        String[] descriptions = getStringArray(PART_DESC_PREFIX + index);
+
+        final int len = colors.length;
+        buildAndAddCard(captions, descriptions, colors[index%len], colors[len - index%len - 1]);
+    }
+
+    private void buildAndAddCard(String[] captions, String[] descriptions,
+                                 String color, String titleColor) {
         if (null != captions) {
+            int offset = 0;
+            Card card;
             for (String name : captions) {
-                mCardView.addCardToLastStack(CardUtils.get().getCard(name));
+                card = buildPatternCard(name, descriptions, offset++, color, titleColor);
+                mCardView.addCardToLastStack(card);
             }
         }
+    }
+    private Card buildPatternCard(String title, String[] descriptions, int index,
+                                  String color, String titleColor) {
+        Card card;
+        if (TextUtils.isEmpty(title)) {
+            card = CardUtils.get().getCard("");
+        } else {
+            if (null != descriptions && index < descriptions.length) {
+                card = CardUtils.get().getCard(title, descriptions[index],
+                        color, titleColor, false, true);
+            } else {
+                card = CardUtils.get().getCard(title);
+            }
+        }
+        return card;
     }
 
     private void addPlayCardStack() {
@@ -105,6 +133,10 @@ public class CardSampleFragment extends Fragment {
                 "You can easily implement an onClickListener on any card, but the last boolean parameter of the PlayCards allow you to toggle the clickable background.",
                 "#4ac925", "#222222", true, true));
     }
+
+    private final String[] colors = new String[] {
+            "#33b6ea", "#e00707", "#f2a400", "#4ac925", "#222222", "#9d36d0"
+    };
 
     private void addRegularCardStack() {
         CardStack stack2 = CardUtils.get().getCardStack("REGULAR CARDS");

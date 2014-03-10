@@ -5,7 +5,7 @@
      Interface Adaptation, Decoupling of Objects, Abstract Collection,
      Behavioral Extension, Algorithm Encapsulation, Performance and Object Access,
      and State of Object -->
-    <string-array name="pattern_functional_part">
+    <string-array name="pattern_functional_part" translate="false">
         <item>@string/part_object_creation</item>
         <item>@string/part_interface_adaptation</item>
         <item>@string/part_decoupling_objects</item>
@@ -16,15 +16,7 @@
         <item>@string/part_object_state</item>
     </string-array>
 
-    <string name="part_object_creation">Object Creation</string>
-    <string name="part_interface_adaptation">Interface Adaptation</string>
-    <string name="part_decoupling_objects">Decoupling of Objects</string>
-    <string name="part_abstract_collection">Abstract Collection</string>
-    <string name="part_behavioral_extension">Behavioral Extension</string>
-    <string name="part_algorithm_encapsulation">Interface Adaptation</string>
-    <string name="part_performance_and_object_access">Object Creation</string>
-    <string name="part_object_state">Interface Adaptation</string>
-
+    <!-- caption arrays for pattern in each part -->
     <string-array name="title_part_0">
         <item>@string/object_creation_prototype</item>
         <item>@string/object_creation_factory_method</item>
@@ -32,60 +24,90 @@
         <item>@string/object_creation_builder</item>
         <item>@string/object_creation_singleton</item>
     </string-array>
-    <string name="object_creation_prototype">Prototype</string>
-    <string name="object_creation_factory_method">Factory Method</string>
-    <string name="object_creation_abstract_factory">Abstract Factory</string>
-    <string name="object_creation_builder">Builder</string>
-    <string name="object_creation_singleton">Singleton</string>
 
     <string-array name="title_part_1">
         <item>@string/interface_adaptation_adapter</item>
         <item>@string/interface_adaptation_bridge</item>
+        <item>@string/interface_adaptation_facade</item>
     </string-array>
-    <string name="abstract_collection_composite">Composite</string>
-    <string name="abstract_collection_iterator">Iterator</string>
 
     <string-array name="title_part_2">
         <item>@string/decoupling_objects_mediator</item>
         <item>@string/decoupling_objects_observer</item>
     </string-array>
-    <string name="decoupling_objects_mediator">Mediator</string>
-    <string name="decoupling_objects_observer">Observer</string>
 
     <string-array name="title_part_3">
-        <item>@string/interface_adaptation_adapter</item>
-        <item>@string/interface_adaptation_bridge</item>
+        <item>@string/abstract_collection_composite</item>
+        <item>@string/abstract_collection_iterator</item>
     </string-array>
-    <string name="interface_adaptation_adapter">Adapter</string>
-    <string name="interface_adaptation_bridge">Bridge</string>
 
     <string-array name="title_part_4">
         <item>@string/behavioral_extension_visitor</item>
         <item>@string/behavioral_extension_decorator</item>
         <item>@string/behavioral_extension_chain_responsibility</item>
     </string-array>
-    <string name="behavioral_extension_visitor">Mediator</string>
-    <string name="behavioral_extension_decorator">Observer</string>
-    <string name="behavioral_extension_chain_responsibility">Chain of Responsibility</string>
 
     <string-array name="title_part_5">
         <item>@string/algorithm_encapsulation_template_method</item>
         <item>@string/algorithm_encapsulation_strategy</item>
         <item>@string/algorithm_encapsulation_command</item>
     </string-array>
-    <string name="algorithm_encapsulation_template_method">Template Method</string>
-    <string name="algorithm_encapsulation_strategy">Strategy</string>
-    <string name="algorithm_encapsulation_command">Command</string>
 
     <string-array name="title_part_6">
         <item>@string/performance_and_object_access_flyweight</item>
         <item>@string/performance_and_object_access_proxy</item>
     </string-array>
-    <string name="performance_and_object_access_flyweight">Flyweight</string>
-    <string name="performance_and_object_access_proxy">Proxy</string>
 
     <string-array name="title_part_7">
         <item>@string/object_state_memento</item>
     </string-array>
-    <string name="object_state_memento">Memento</string>
+    <!-- caption arrays end -->
+
+
+    <!-- description arrays for pattern in each part -->
+    <string-array name="description_part_0">
+        <item>@string/description_prototype</item>
+        <item>@string/description_factory_method</item>
+        <item>@string/description_abstract_factory</item>
+        <item>@string/description_builder</item>
+        <item>@string/description_singleton</item>
+    </string-array>
+
+    <string-array name="description_part_1">
+        <item>@string/description_adapter</item>
+        <item>@string/description_bridge</item>
+        <item>@string/description_facade</item>
+    </string-array>
+
+    <string-array name="description_part_2">
+        <item>@string/description_mediator</item>
+        <item>@string/description_observer</item>
+    </string-array>
+
+    <string-array name="description_part_3">
+        <item>@string/description_composite</item>
+        <item>@string/description_iterator</item>
+    </string-array>
+
+    <string-array name="description_part_4">
+        <item>@string/description_visitor</item>
+        <item>@string/description_decorator</item>
+        <item>@string/description_chain_responsibility</item>
+    </string-array>
+
+    <string-array name="description_part_5">
+        <item>@string/description_template_method</item>
+        <item>@string/description_strategy</item>
+        <item>@string/description_command</item>
+    </string-array>
+
+    <string-array name="description_part_6">
+        <item>@string/description_flyweight</item>
+        <item>@string/description_proxy</item>
+    </string-array>
+
+    <string-array name="description_part_7">
+        <item>@string/description_memento</item>
+    </string-array>
+    <!-- description arrays end -->
 </resources>

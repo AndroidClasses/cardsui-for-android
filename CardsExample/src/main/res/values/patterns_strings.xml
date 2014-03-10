@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Organize 21 patterns into eight functional parts based on
+     their practical themes or domains of usage: Object Creation,
+     Interface Adaptation, Decoupling of Objects, Abstract Collection,
+     Behavioral Extension, Algorithm Encapsulation, Performance and Object Access,
+     and State of Object -->
+
+    <string name="part_object_creation">Object Creation</string>
+    <string name="part_interface_adaptation">Interface Adaptation</string>
+    <string name="part_decoupling_objects">Decoupling of Objects</string>
+    <string name="part_abstract_collection">Abstract Collection</string>
+    <string name="part_behavioral_extension">Behavioral Extension</string>
+    <string name="part_algorithm_encapsulation">Interface Adaptation</string>
+    <string name="part_performance_and_object_access">Object Creation</string>
+    <string name="part_object_state">Interface Adaptation</string>
+
+    <!-- caption of pattern in each part -->
+    <string name="object_creation_prototype">Prototype</string>
+    <string name="object_creation_factory_method">Factory Method</string>
+    <string name="object_creation_abstract_factory">Abstract Factory</string>
+    <string name="object_creation_builder">Builder</string>
+    <string name="object_creation_singleton">Singleton</string>
+
+    <string name="interface_adaptation_adapter">Adapter</string>
+    <string name="interface_adaptation_bridge">Bridge</string>
+    <string name="interface_adaptation_facade">Facade</string>
+
+    <string name="decoupling_objects_mediator">Mediator</string>
+    <string name="decoupling_objects_observer">Observer</string>
+
+    <string name="abstract_collection_composite">Composite</string>
+    <string name="abstract_collection_iterator">Iterator</string>
+
+    <string name="behavioral_extension_visitor">Visitor</string>
+    <string name="behavioral_extension_decorator">Decorator</string>
+    <string name="behavioral_extension_chain_responsibility">Chain of Responsibility</string>
+
+    <string name="algorithm_encapsulation_template_method">Template Method</string>
+    <string name="algorithm_encapsulation_strategy">Strategy</string>
+    <string name="algorithm_encapsulation_command">Command</string>
+
+    <string name="performance_and_object_access_flyweight">Flyweight</string>
+    <string name="performance_and_object_access_proxy">Proxy</string>
+
+    <string name="object_state_memento">Memento</string>
+    <!-- caption of pattern end -->
+
+    <!-- description of pattern in each part -->
+    <string name="description_prototype">Specify the kinds of objects to create using a prototypical instance,
+and create new objects by copying this prototype.</string>
+    <string name="description_factory_method">Define an interface for creating an object, but let
+subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to
+subclasses.</string>
+    <string name="description_abstract_factory">Provides an interface for creating families of related or dependent objects
+without specifying their concrete classes.</string>
+    <string name="description_builder">Separates the construction of a complex object from its representation
+so that the same construction process can create different representations.</string>
+    <string name="description_singleton">Ensures a class has only one instance, and provide a global point of
+access to it.</string>
+
+    <string name="description_adapter">Converts the interface of a class into another interface clients expect.
+Adapter lets classes work together that couldn\'t otherwise because of incompatible interfaces.</string>
+    <string name="description_bridge">Decouples an abstraction from its implementation so that the two can
+vary independently.</string>
+    <string name="description_facade">Provides a unified interface to a set of interfaces in a system. Façade
+defines a higher-level interface that makes the subsystem easier to use.</string>
+
+    <string name="description_mediator">Defines an object that encapsulates how a set of objects interacts.
+Mediator promotes loose coupling by keeping objects from referring to each other explicitly, and
+it lets you vary their interaction independently.</string>
+    <string name="description_observer">Defines a one-to-many dependency between objects so that when
+one object changes state, all its dependents are notified and updated automatically.</string>
+
+    <string name="description_composite">Compose objects into tree structures to represent part-whole
+hierarchies. Composite lets clients treat individual objects and compositions of objects
+uniformly.</string>
+    <string name="description_iterator">Provide a way to access to the elements of an aggregate object sequentially without
+exposing its underlying representation.</string>
+
+    <string name="description_visitor">The Visitor pattern represents an operation to be performed on the elements of an object
+structure. Visitor lets you define a new operation without changing the classes of the elements on
+which it operates. </string>
+    <string name="description_decorator">Attaches additional responsibilities to an object dynamically.
+Decorators provide a flexible alternative to subclassing for extending functionality.</string>
+    <string name="description_chain_responsibility">To avoid coupling the sender of a request to its receiver
+by giving more than one object a chance to handle the request. It chains the receiving objects
+and passes the request along the chain until an object handles it.</string>
+
+    <string name="description_template_method">Define the skeleton of an algorithm in an operation,
+deferring some steps to subclasses. Template Method lets subclasses redefine certain steps of
+an algorithm without changing the algorithm\'s structure.</string>
+    <string name="description_strategy">Define a family of algorithms, encapsulate each one, and make
+them interchangeable. Strategy lets the algorithm vary independently from clients that use it.</string>
+    <string name="description_command">Encapsulate a request as an object, thereby letting you parameterize
+clients with different requests, queue or log requests, and support undoable operations.</string>
+
+    <string name="description_flyweight">Uses sharing to support large numbers of fine-grained objects
+efficiently.</string>
+    <string name="description_proxy">Provides a surrogate or placeholder for another object to control access
+to it.</string>
+
+    <string name="description_memento">Without violating encapsulation, capture and externalize an object’s
+internal state so that the object can be restored to this state later.</string>
+    <!-- description of pattern end -->
+</resources>
