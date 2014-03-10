@@ -1,6 +1,7 @@
 package com.cardsui.pattern;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -21,6 +22,19 @@ public class CardSampleFragment extends Fragment {
 
     private CardUI mCardView;
 
+    private Resources mResource;
+    private String[] getStringArray(int id) {
+        return mResource.getStringArray(id);
+    }
+    private String[] getStringArray(String resName) {
+        int id = mResource.getIdentifier(resName, "array", getActivity().getPackageName());
+        if (id > 0) {
+            return getStringArray(id);
+        } else {
+            return null;
+        }
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -32,12 +46,35 @@ public class CardSampleFragment extends Fragment {
         mCardView = (CardUI) view.findViewById(R.id.cardsview);
         mCardView.setSwipeable(false);
 
-        addRegularCardStack();
-        addPlayCardStack();
+        mResource = getResources();
+
+//        addRegularCardStack();
+//        addPlayCardStack();
+        addPatternCardStacks();
 
         // draw cards
         mCardView.refresh();
         return view;
+    }
+
+    private void addPatternCardStacks() {
+        String[] partTitles = getStringArray(R.array.pattern_functional_part);
+        int index = 0;
+        for (String part : partTitles) {
+            initStackAndAppendCards(part, index++);
+        }
+    }
+
+    private static final String PATTERN_TITLE_PREFIX = "title_part_";
+    private void initStackAndAppendCards(String title, int index) {
+        mCardView.addStack(CardUtils.get().getCardStack(title));
+
+        String[] captions = getStringArray(PATTERN_TITLE_PREFIX + index);
+        if (null != captions) {
+            for (String name : captions) {
+                mCardView.addCardToLastStack(CardUtils.get().getCard(name));
+            }
+        }
     }
 
     private void addPlayCardStack() {
