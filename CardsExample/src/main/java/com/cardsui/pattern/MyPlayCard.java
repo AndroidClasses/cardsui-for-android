@@ -1,4 +1,4 @@
-package com.cardsui.example;
+package com.cardsui.pattern;
 
 import android.graphics.Color;
 import android.view.View;

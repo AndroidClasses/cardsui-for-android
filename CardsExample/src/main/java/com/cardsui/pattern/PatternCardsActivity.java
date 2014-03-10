@@ -1,4 +1,4 @@
-package com.cardsui.example;
+package com.cardsui.pattern;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -13,7 +13,7 @@ import android.widget.Toast;
 import com.fima.cardsui.objects.CardStack;
 import com.fima.cardsui.views.CardUI;
 
-public class MainActivity extends Activity {
+public class PatternCardsActivity extends Activity {
 
 	private CardUI mCardView;
 
